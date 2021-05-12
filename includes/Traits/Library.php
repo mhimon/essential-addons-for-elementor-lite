@@ -183,7 +183,7 @@ trait Library
             return true;
         }
         
-        if (isset($_REQUEST['action'])) {
+        if ( isset( $_REQUEST['action'] ) && ! empty( $_REQUEST['action'] ) ) {
             return true;
         }
 
@@ -215,7 +215,7 @@ trait Library
             return false;
         }
 
-        if (isset($_REQUEST['action'])) {
+        if ( isset( $_REQUEST['action'] ) && ! empty( $_REQUEST['action'] ) ) {
             return false;
         }
 
